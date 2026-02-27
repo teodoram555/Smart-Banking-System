@@ -1,4 +1,6 @@
-public class SavingsAccount extends Account implements Specs {
+import javax.xml.crypto.Data;
+
+public class SavingsAccount extends Account implements Data {
 
     double minBalance;
 
@@ -6,7 +8,6 @@ public class SavingsAccount extends Account implements Specs {
         super(accountNumber,accountHolderName,balance);
         this.minBalance=minBalance;
     }
-    @Override
     public double calculateInterest(double rate,int term){
         double interest=0.0;
         interest=getBalance()*rate;

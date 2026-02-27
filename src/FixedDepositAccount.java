@@ -1,4 +1,6 @@
-public class FixedDepositAccount extends Account implements Specs{
+import javax.xml.crypto.Data;
+
+public class FixedDepositAccount extends Account implements Data {
     public FixedDepositAccount(String accountNumber,String accountHolderName,double balance){
         super(accountNumber,accountHolderName,balance);
     }

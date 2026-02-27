@@ -46,4 +46,8 @@ public class Account
         newBalance=getBalance();
         return newBalance;
     }
+    @Override
+    public String toString(){
+        return "Account: "+this.accountNumber+"Account Holder: "+this.accountHolderName+"Balance: "+this.balance;
+    }
 }

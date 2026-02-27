@@ -1,4 +1,6 @@
-public class CurrentAccount extends Account implements Specs {
+import javax.xml.crypto.Data;
+
+public class CurrentAccount extends Account implements Data {
 
     public double limit;
 
